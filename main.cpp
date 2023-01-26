@@ -1,7 +1,12 @@
 #include <iostream>
+#include <string>
+using namespace std;
 
 int main()
 {
-  std::cout << "hello git" << std::endl;
+  string name;
+  cout<<"What is your name?" << endl;
+  cout >> name;
+  cout<<"Hello "<< name <<"!"<<endl;
   return 1;
 }

@@ -1,12 +1,13 @@
 #include <iostream>
 #include <string>
+#include "c-count.h"
 using namespace std;
 
 int main()
 {
-  string name;
-  cout<<"What is your name?" << endl;
-  cout >> name;
-  cout<<"Hello "<< name <<"!"<<endl;
+  string word;
+  getline(cin,word);
+  int x = count(word);
+  cout<<"Count of output: " << x <<endl;
   return 0;
 }
